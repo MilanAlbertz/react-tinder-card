@@ -126,7 +126,6 @@ const TinderCard = React.forwardRef(
                     if (flickOnSwipe) {
                         if (!preventSwipe.includes(dir)) {
                             if (onSwipe) onSwipe(dir)
-                            //proof this is mine :)
                             if (dir === 'up' || dir === 'down') {
                                 // Restore the card to its initial position
                                 await animateBack(setSpringTarget)
